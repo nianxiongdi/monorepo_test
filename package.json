@@ -1,0 +1,15 @@
+{
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn workspace test1  run dev & yarn workspace vite-project run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "packageManager": "yarn@4.1.1"
+}
