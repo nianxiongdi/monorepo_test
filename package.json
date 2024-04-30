@@ -1,0 +1,35 @@
+{
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/@react-native-async-storage/async-storage",
+      "**/react",
+      "**/react-dom",
+      "**/react-native",
+      "**/react-native/**",
+      "**/react-native-codegen",
+      "**/react-native-dev-menu",
+      "**/react-native-macos",
+      "**/react-native-windows",
+      "**/@babel",
+      "**/@react-native/metro-config"
+    ]
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn workspace test1  run dev & yarn workspace vite-project run dev",
+    "ios": "yarn workspace mpx-react-native-demo run watch & yarn workspace rn run ios",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "packageManager": "yarn@3.6.4",
+  "dependencies": {
+    "@babel/runtime": "^7.24.5",
+    "lru-cache": "4.1.5"
+  }
+}
